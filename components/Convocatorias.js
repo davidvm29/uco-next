@@ -142,7 +142,7 @@ export const Convocatorias = () => {
         
         <Link href="#">
             
-            <img src="./images/como-llegar.jpg" alt="Imagen de como llegar"/>
+        <img className="custom-img" src="./images/asset 14.jpeg" alt="Actualidad Universitaria" longdesc="servicios/actualidad" />
             
         </Link>
     </div>

@@ -52,6 +52,10 @@ const FilteredNoticias = ({ NoticiasFecha }) => {
         <div>
             <Header />
             <NavBar idioma={idioma}/>
+            <div className="external-buttons">
+                <Link href={`/${idioma}`}><img src="../images/asset0.png" alt="Botón 1" /></Link>
+                <a href="/acercanuevo.html"><img src="../images/asset1.png" alt="Botón 2" /></a>
+            </div>
             <NavNoticias />
             <section id="principal" className="row">
                 <div id="info-container" className="col-lg-9 col-md-12 col-sm-12 col-xs-12">

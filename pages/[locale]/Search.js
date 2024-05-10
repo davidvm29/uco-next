@@ -44,6 +44,10 @@ const Search = () => {
         <div>
             <Header/>
             <NavBar idioma={idioma}/>
+            <div className="external-buttons">
+                <Link href={`/${idioma}`}><img src="../images/asset0.png" alt="Botón 1" /></Link>
+                <a href="/acercanuevo.html"><img src="../images/asset1.png" alt="Botón 2" /></a>
+            </div>
             <NavSearch/>
             <section id="principal" className="row">
             <section id="contenido" className="col-lg-10 col-md-12 col-sm-12 col-xs-12">

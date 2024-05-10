@@ -1,0 +1,19 @@
+.shareButtons {
+    display: flex;
+  }
+  
+  /* Añade un espacio entre los botones */
+  .shareButtons > * {
+    margin-right: 10px; /* Puedes ajustar el valor según el espacio que desees */
+  }
+  
+  /* Elimina el margen derecho del último botón para evitar espacio extra */
+  .shareButtons > *:last-child {
+    margin-right: 0;
+  }
+  
+  /* Estilo para los iconos */
+  .shareButtons .icon {
+    color: #999; /* Color gris */
+  }
+  

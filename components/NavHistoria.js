@@ -9,7 +9,7 @@ export const NavHistoria = () => {
     <nav className="row" id="menu-principal">
         {/* <div id="menu-button" style={{display: 'block'}} bis_skin_checked="1">Menú</div> */}
         <ul className="open">
-            <li className="home" style={{ verticalAlign: "middle" }}><Link href={`/${idioma}`} style={{ verticalAlign: "middle", height: "26px", width: "26px", textAlign: "left" }}><img src="./images/icon-home.png" alt="Inicio" width="26" height="26"/></Link></li>
+            <li className="home" style={{ verticalAlign: "middle" }}><Link href={`/${idioma}`} style={{ verticalAlign: "middle", height: "26px", width: "26px", textAlign: "left" }}><img src="../images/icon-home.png" alt="Inicio" width="26" height="26"/></Link></li>
             <li><a href="historia-y-video-promocional.html">{t("historia")}</a></li>
             <li className="has-sub"><span className="submenu-button"></span><a href="#">{t("organizacion")}</a>
                 <ul style={{display: 'block'}}>

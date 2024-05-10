@@ -39,7 +39,7 @@ export default function Historia({ source, frontmatter }) {
               </div>
               <div id="contenido-video" className="col-lg-6 col-md-6 col-sm-12 col-xs-12" style={{marginRight: "50px;"}}>
                   <iframe width="450" height="315" src="https://www.youtube.com/embed/LG1c4HhNbjo" frameborder="0" allowfullscreen></iframe>
-                  <img src="/images/rectorado.jpg" alt="Rectorado" width="450"/>
+                  <img src="./images/rectorado.jpg" alt="Rectorado" width="450"/>
               </div>
           </section>
         <InteresVertical/>

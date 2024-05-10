@@ -79,7 +79,7 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
                 <div className="itemBody">
                     <figure className="imagen_contenido_noticia">
                         <a data-k2-modal="image" href="/servicios/actualidad/media/k2/items/cache/a8111bab4c62ab7868529ac61cb9bb35_XL.jpg" title="Clic para vista previa de la imagen">
-                            <img src={frontmatter.url_image} alt="Descripción de la imagen" />
+                            <img src={`./${frontmatter.url_image}`} alt="Descripción de la imagen" />
                         </a>
                         <figcaption className="pie_contenido_noticia">
                             {frontmatter.pie_foto}

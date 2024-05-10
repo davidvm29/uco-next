@@ -22,13 +22,13 @@ export const Footer = () => {
 
           <div className="col-md-12 logos-footer mb-3">
           <Link href={`/${idioma}`} className="logo-footer">
-            <img src="/images/asset 22.png" width="50" height="50" alt="Universidad de Córdoba" title="Universidad de Córdoba" />
+            <img src="./images/asset 22.png" width="50" height="50" alt="Universidad de Córdoba" title="Universidad de Córdoba" />
           </Link>
-            <a href="http://www.ceia3.es" target="_blank" className="logo-footer" rel="noreferrer"><img src="/images/asset 23.png" width="50" height="50" alt="Universidad de Córdoba" title="Universidad de Córdoba" /></a>
-            <a href="https://www.uco.es/resiliencia" target="_blank" className="logo-footer" rel="noreferrer"><img src="/images/asset 24.jpeg" height="50" alt="Universidad de Córdoba" title="Fondos PRTR" /></a>
-            <a href="https://www.bancosantander.es/es/universidades" target="_blank" className="logo-footer" rel="noreferrer"><img src="/images/asset 25.jpeg" height="50" alt="Universidad de Córdoba" title="Santander Universidades" /></a>
-            <a href="https://www.uco.es/investigacion/portal/HRS4R" className="logo-footer"><img src="/images/asset 26.png" height="50" alt="HR" title="HR" /></a>
-            <a href="http://www.uco.es/zonacardioasegurada/" target="_blank" className="logo-footer logo-zonacardio" rel="noreferrer"><img src="/images/asset 27.png" width="100px" alt="Zona Cardio asegurada" title="Zona Cardio Asegurada - Universidad de Córdoba" /></a>
+            <a href="http://www.ceia3.es" target="_blank" className="logo-footer" rel="noreferrer"><img src="./images/asset 23.png" width="50" height="50" alt="Universidad de Córdoba" title="Universidad de Córdoba" /></a>
+            <a href="https://www.uco.es/resiliencia" target="_blank" className="logo-footer" rel="noreferrer"><img src="./images/asset 24.jpeg" height="50" alt="Universidad de Córdoba" title="Fondos PRTR" /></a>
+            <a href="https://www.bancosantander.es/es/universidades" target="_blank" className="logo-footer" rel="noreferrer"><img src="./images/asset 25.jpeg" height="50" alt="Universidad de Córdoba" title="Santander Universidades" /></a>
+            <a href="https://www.uco.es/investigacion/portal/HRS4R" className="logo-footer"><img src="./images/asset 26.png" height="50" alt="HR" title="HR" /></a>
+            <a href="http://www.uco.es/zonacardioasegurada/" target="_blank" className="logo-footer logo-zonacardio" rel="noreferrer"><img src="./images/asset 27.png" width="100px" alt="Zona Cardio asegurada" title="Zona Cardio Asegurada - Universidad de Córdoba" /></a>
           </div>
 
           <div className="col-md-12 redes-sociales">

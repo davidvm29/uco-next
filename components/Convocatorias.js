@@ -142,7 +142,7 @@ export const Convocatorias = () => {
         
         <Link href="#">
             
-            <Image src="./images/como-llegar.jpg" alt="Imagen de como llegar" width={282} height={100} />
+            <img src="./images/como-llegar.jpg" alt="Imagen de como llegar"/>
             
         </Link>
     </div>

@@ -33,7 +33,7 @@ export const Footer = () => {
 
           <div className="col-md-12 redes-sociales">
             <ul className="list-inline mb-3">
-              <li className="list-inline-item"><a href="https://www.facebook.com/universidadcordoba" target="_blank" rel="nofollow noreferrer"style={{backgroundImage: `url('./images/asset\ 32.png')`}} className="icon-facebook"></a></li>
+              <li className="list-inline-item"><a href="https://www.facebook.com/universidadcordoba" target="_blank" rel="nofollow noreferrer"style={{backgroundImage: `url('./images/asset32.png')`}} className="icon-facebook"></a></li>
               <li className="list-inline-item"><a href="https://twitter.com/Univcordoba" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 33.png')`}} className="icon-twitter"></a></li>
               <li className="list-inline-item"><a href="https://www.linkedin.com/company/universidad-de-cordoba" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 34.png')`}} className="icon-linkedin"></a></li>
               <li className="list-inline-item"><a href="http://www.uco.es/servicios/actualidad/?format=feed" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 35.png')`}} className="icon-rss"></a></li>

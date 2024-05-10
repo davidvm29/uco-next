@@ -34,7 +34,7 @@ export const NavBar = ({ idioma }) => {
 
   return (
     <div>
-      <div id="top-bar">
+      <div style={{backgroundImage: `url('./images/boton-lupa.png') top center no-repeat`}}  id="top-bar">
         <ul id="idiomas">
           {i18nextConfig.i18n.locales.map((locale) => (
             <LanguageSwitchLink

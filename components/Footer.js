@@ -33,13 +33,13 @@ export const Footer = () => {
 
           <div className="col-md-12 redes-sociales">
             <ul className="list-inline mb-3">
-              <li className="list-inline-item"><a href="https://www.facebook.com/universidadcordoba" target="_blank" rel="nofollow noreferrer" className="icon-facebook"></a></li>
-              <li className="list-inline-item"><a href="https://twitter.com/Univcordoba" target="_blank" rel="nofollow noreferrer" className="icon-twitter"></a></li>
-              <li className="list-inline-item"><a href="https://www.linkedin.com/company/universidad-de-cordoba" target="_blank" rel="nofollow noreferrer" className="icon-linkedin"></a></li>
-              <li className="list-inline-item"><a href="http://www.uco.es/servicios/actualidad/?format=feed" target="_blank" rel="nofollow noreferrer" className="icon-rss"></a></li>
-              <li className="list-inline-item"><a href="https://www.flickr.com/photos/univcordoba/" target="_blank" rel="nofollow noreferrer" className="icon-flickr"></a></li>
-              <li className="list-inline-item"><a href="https://www.youtube.com/user/univcordoba" target="_blank" rel="nofollow noreferrer" className="icon-youtube"></a></li>
-              <li className="list-inline-item"><a href="https://www.instagram.com/universidaddecordoba/" target="_blank" rel="nofollow noreferrer" className="icon-instagram"></a></li>
+              <li className="list-inline-item"><a href="https://www.facebook.com/universidadcordoba" target="_blank" rel="nofollow noreferrer"style={{backgroundImage: `url('./images/asset\ 32.png')`}} className="icon-facebook"></a></li>
+              <li className="list-inline-item"><a href="https://twitter.com/Univcordoba" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 33.png')`}} className="icon-twitter"></a></li>
+              <li className="list-inline-item"><a href="https://www.linkedin.com/company/universidad-de-cordoba" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 34.png')`}} className="icon-linkedin"></a></li>
+              <li className="list-inline-item"><a href="http://www.uco.es/servicios/actualidad/?format=feed" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 35.png')`}} className="icon-rss"></a></li>
+              <li className="list-inline-item"><a href="https://www.flickr.com/photos/univcordoba/" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 36.png')`}} className="icon-flickr"></a></li>
+              <li className="list-inline-item"><a href="https://www.youtube.com/user/univcordoba" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 37.png')`}} className="icon-youtube"></a></li>
+              <li className="list-inline-item"><a href="https://www.instagram.com/universidaddecordoba/" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 38.png')`}}className="icon-instagram"></a></li>
               <li className="list-inline-item"><a href="https://www.tiktok.com/@universidadcordoba?lang=es" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 39.png')`}} className="icon-tiktok"></a></li>
             </ul>
           </div>

@@ -44,7 +44,7 @@ export const NavBar = ({ idioma }) => {
           ))}
         </ul>
 
-        <div id="buscar">
+        <div id="buscar"> style={{backgroundImage: `url('./images/boton-lupa.png') top center no-repeat`}}
           <a className="boton-buscar"></a>
           <label htmlFor="q" style={{ display: "none" }}>{t("buscar")}</label>
           <input

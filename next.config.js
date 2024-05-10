@@ -3,6 +3,8 @@
  */
 const nextConfig = {
   output: 'export',
+  basePath: isProd ? '/ff' : '',
+  assetPrefix: isProd ? 'https://davidvm29.github.io/ff/' : '',
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,

@@ -71,8 +71,8 @@ export const NavBarNoticias = ({ idioma }) => {
         </div>
       </div>
       <div className="external-buttons">
-        <Link href={`${idioma}`}><img src="./images/asset0.png" alt="Botón 1" /></Link>
-        <a href="/acercanuevo.html"><img src="./images/asset1.png" alt="Botón 2" /></a>
+        <Link href={`${idioma}`}><img src="../images/asset0.png" alt="Botón 1" /></Link>
+        <a href="/acercanuevo.html"><img src="../images/asset1.png" alt="Botón 2" /></a>
       </div>
     </div>
   );

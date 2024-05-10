@@ -211,7 +211,7 @@ p {
   height: 32px; 
   width: 32px; 
   margin-right:5px;
-  background:url(/images/boton-lupa.png) top center no-repeat;
+  /* background:url('/images/boton-lupa.png') top center no-repeat; */
  }
 #top-bar #buscar input[type=text]{ 
   height: 20px; 

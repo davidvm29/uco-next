@@ -23,7 +23,7 @@ const Search = () => {
         const fetchData = async () => {
             if (!query) return; // Evitar solicitudes vacías
 
-            const response = await fetch(`/${locale}/data.json`);
+            const response = await fetch(`./${locale}/data.json`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

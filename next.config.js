@@ -4,8 +4,8 @@
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/ff' : '',
-  assetPrefix: isProd ? '/ff/' : '',
+  basePath: isProd ? '/uco-next' : '',
+  assetPrefix: isProd ? '/uco-next/' : '',
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,

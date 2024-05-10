@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',
   basePath: isProd ? '/ff' : '',
-  assetPrefix: isProd ? 'https://davidvm29.github.io/ff/' : '',
+  assetPrefix: isProd ? '/ff/' : '',
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,

@@ -40,7 +40,7 @@ export const Footer = () => {
               <li className="list-inline-item"><a href="https://www.flickr.com/photos/univcordoba/" target="_blank" rel="nofollow noreferrer" className="icon-flickr"></a></li>
               <li className="list-inline-item"><a href="https://www.youtube.com/user/univcordoba" target="_blank" rel="nofollow noreferrer" className="icon-youtube"></a></li>
               <li className="list-inline-item"><a href="https://www.instagram.com/universidaddecordoba/" target="_blank" rel="nofollow noreferrer" className="icon-instagram"></a></li>
-              <li className="list-inline-item"><a href="https://www.tiktok.com/@universidadcordoba?lang=es" target="_blank" rel="nofollow noreferrer" className="icon-tiktok"></a></li>
+              <li className="list-inline-item"><a href="https://www.tiktok.com/@universidadcordoba?lang=es" target="_blank" rel="nofollow noreferrer" style={{backgroundImage: `url('./images/asset\ 39.png')`}} className="icon-tiktok"></a></li>
             </ul>
           </div>
         </div>

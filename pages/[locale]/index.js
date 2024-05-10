@@ -9,6 +9,7 @@ import Destacados from "../../components/Destacados";
 import {Footer} from "../../components/Footer";
 import {Interes} from '../../components/Interes'
 import Noticias from "../../components/Noticias";
+import Link from 'next/link';
 
 const Homepage = ({ posts, images, ...i18nProps }) => {
   const { t } = useTranslation(['common'])

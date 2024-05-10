@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 export const NavBarNoticias = ({ idioma }) => {
   const router = useRouter();
+  const { locale } = router.query;
   const [query, setQuery] = useState('');
   const MAX_QUERY_LENGTH = 50;
   const {t} = useTranslation(['common'])
@@ -26,7 +27,7 @@ export const NavBarNoticias = ({ idioma }) => {
 
     // Redirigimos a la pagina con la query
     router.push({
-      pathname: `/${idioma}/Search`,
+      pathname: `/${locale}/Search`,
       query: { q: query },
     });
   };
@@ -71,7 +72,7 @@ export const NavBarNoticias = ({ idioma }) => {
         </div>
       </div>
       <div className="external-buttons">
-        <Link href={`${idioma}`}><img src="../images/asset0.png" alt="Botón 1" /></Link>
+        <Link href={`${locale}`}><img src="../images/asset0.png" alt="Botón 1" /></Link>
         <a href="/acercanuevo.html"><img src="../images/asset1.png" alt="Botón 2" /></a>
       </div>
     </div>

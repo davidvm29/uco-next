@@ -113,7 +113,7 @@ export async function getStaticPaths() {
   );
   return {
       paths: paths.flat(),
-      fallback: "blocking",
+      fallback: false,
   };
 }
 

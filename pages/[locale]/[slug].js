@@ -215,7 +215,7 @@ export async function getStaticPaths() {
     // Retorna el array de rutas aplanado y el fallback.
     return {
         paths: paths.flat(),
-        fallback: "blocking",
+        fallback: false,
     };
 }
 

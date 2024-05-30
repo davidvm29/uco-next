@@ -26,8 +26,6 @@ const FilteredNoticias = ({ NoticiasFecha }) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const dateString = newDate.toLocaleDateString(undefined, options).replace(/\//g, '-'); // Convertir la fecha seleccionada a formato yyyy-mm-dd
     
-        console.log('Fecha seleccionada:', dateString);
-    
         // Redirigir al usuario a la nueva página de noticias con solo la fecha seleccionada
         console.log('Redirigiendo a la página de noticias...');
         router.push(`/${idioma}/FilteredNoticias?fecha=${dateString}`);
@@ -125,6 +123,6 @@ export async function getStaticPaths() {
     );
     return {
         paths: paths.flat(),
-        fallback: "blocking",
+        fallback: false,
     };
 }

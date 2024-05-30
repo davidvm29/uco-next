@@ -17,7 +17,7 @@ const Search = () => {
     const [searchResults, setSearchResults] = useState([]);
     const query = router.query.q;
     const { t, i18n } = useTranslation(['common']);
-    const idioma = i18n.options.lng;
+    const idioma = i18n.language;
 
     useEffect(() => {
         const fetchData = async () => {

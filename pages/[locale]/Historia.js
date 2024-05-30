@@ -19,7 +19,7 @@ export default function Historia({ source, frontmatter }) {
   const router = useRouter();  // Usando el hook useRouter
   const { t } = useTranslation(['common']);
   const { i18n } = useTranslation();
-  const idioma = i18n.options.lng;
+  const idioma = i18n.language;
   const paths = [
     { label: t("inicio_bread"), href: `/${idioma}` },
     { label: t("conoce_uco"), href: `/${idioma}/${t("conoce_uco")}`},

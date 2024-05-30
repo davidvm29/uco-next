@@ -19,7 +19,7 @@ const FilteredNoticias = ({ NoticiasFecha }) => {
     const [isClient, setIsClient] = useState(false);
     const [noticias, setNoticias] = useState([]);
     const { i18n } = useTranslation();
-    const idioma = i18n.options.lng;
+    const idioma = i18n.language;
     const {t} = useTranslation(['common'])
 
     const handleDateChange = (newDate) => {

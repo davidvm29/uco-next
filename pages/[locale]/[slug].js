@@ -29,7 +29,7 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
       const [isClient, setIsClient] = useState(false);
       const {t} = useTranslation(['common'])
       const { i18n } = useTranslation();
-      const idioma = i18n.options.lng;
+      const idioma = i18n.language;
 
       const paths = [
         { label: t("inicio_bread"), href: `/${locale}` },

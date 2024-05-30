@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 export const NavHistoria = () => {
   const {t} = useTranslation(['common'])
   const { i18n } = useTranslation();
-  const idioma = i18n.options.lng;
+  const idioma = i18n.language;
   return (
     <nav className="row" id="menu-principal">
         {/* <div id="menu-button" style={{display: 'block'}} bis_skin_checked="1">Menú</div> */}

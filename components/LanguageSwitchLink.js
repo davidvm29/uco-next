@@ -22,7 +22,7 @@ const LanguageSwitchLink = ({ locale }) => {
 };
 
   const handleLanguageSwitch = (event) => {
-    event.preventDefault(); // Previene la navegación del Link
+    // event.preventDefault(); // Previene la navegación del Link
     const newPath = createLocalePath(locale);
     router.push(newPath); // Usa router.push para cambiar la ruta
   };

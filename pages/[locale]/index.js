@@ -14,7 +14,8 @@ import Link from 'next/link';
 const Homepage = ({ posts, images, ...i18nProps }) => {
   const { t } = useTranslation(['common'])
   const { i18n } = useTranslation();
-  const idioma = i18n.options.lng;
+  console.log(i18n)
+  const idioma = i18n.language;
 
   return (
     <div>

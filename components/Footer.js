@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 export const Footer = () => {
   const {t} = useTranslation(['common'])
   const { i18n } = useTranslation();
-  const idioma = i18n.options.lng;
+  const idioma = i18n.language;
   return (
     <div>
       <footer className="container-fluid footer-bar text-center custom-footer-background pt-4 pb-4">

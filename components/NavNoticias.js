@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 export const NavNoticias = () => {
   const {t} = useTranslation(['common'])
   const { i18n } = useTranslation();
-  const idioma = i18n.options.lng;
+  const idioma = i18n.language;
   return (
     <div>
         <nav className="row" id="menu-principal">

@@ -2,7 +2,6 @@ import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 import Link from 'next/link'
 import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
 
 const Homepage = () => {
   const { t } = useTranslation(['404', 'common', 'footer'])
@@ -12,6 +11,7 @@ const Homepage = () => {
       <main>
         <Header heading={t('h1')} title={t('title')} />
         <div>
+          <p>404 Error. Not Found :(</p>
           <Link href='/'>
             <button
               type='button'
@@ -21,7 +21,6 @@ const Homepage = () => {
           </Link>
         </div>
       </main>
-      <Footer />
     </>
   )
 }

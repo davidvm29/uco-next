@@ -22,12 +22,23 @@ const FilteredNoticias = ({ NoticiasFecha }) => {
     const idioma = i18n.language;
     const {t} = useTranslation(['common'])
 
+    const dayHasNews = (date) => {
+        const yyyyMmDd = date.toISOString().slice(0, 10);
+        return NoticiasFecha.some(newsDate => {
+            try {
+                return new Date(newsDate.fecha).toISOString().slice(0, 10) === yyyyMmDd;
+            } catch (error) {
+                console.error('Error al convertir la fecha:', newsDate, error);
+                return false;
+            }
+        });
+    };
+
     const handleDateChange = (newDate) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const dateString = newDate.toLocaleDateString(undefined, options).replace(/\//g, '-'); // Convertir la fecha seleccionada a formato yyyy-mm-dd
     
         // Redirigir al usuario a la nueva página de noticias con solo la fecha seleccionada
-        console.log('Redirigiendo a la página de noticias...');
         router.push(`/${idioma}/FilteredNoticias?fecha=${dateString}`);
     };
 
@@ -83,6 +94,8 @@ const FilteredNoticias = ({ NoticiasFecha }) => {
                                 onChange={setDate}
                                 value={date}
                                 onClickDay={handleDateChange}
+                                tileClassName={({ date, view }) => view === 'month' && (dayHasNews(date) ? 'news-day' : '')}
+                                tileDisabled={({ date, view }) => view === 'month' && !dayHasNews(date)} // Deshabilita los días sin noticias
                             />
                         )}
                     </div>
@@ -115,7 +128,6 @@ export async function getStaticPaths() {
     const paths = await Promise.all(
         idiomasDisponibles.map(async (idioma) => {
             const posts = await getFiles(idioma);
-            console.log('Postsss', posts)
             return posts.map((post) => ({
                 params: { locale: idioma, slug: post.replace(/\.mdx/, "") },
             }));

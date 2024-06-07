@@ -51,11 +51,6 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
     const handleDateChange = (newDate) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const dateString = newDate.toLocaleDateString(undefined, options).replace(/\//g, '-'); // Convertir la fecha seleccionada a formato yyyy-mm-dd
-    
-        console.log('Fecha seleccionada:', dateString);
-    
-        // Redirigir al usuario a la nueva página de noticias con solo la fecha seleccionada
-        console.log('Redirigiendo a la página de noticias...');
         router.push(`/${locale}/FilteredNoticias?fecha=${dateString}`);
     };
     

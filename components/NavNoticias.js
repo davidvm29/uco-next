@@ -8,7 +8,6 @@ export const NavNoticias = () => {
   return (
     <div>
         <nav className="row" id="menu-principal">
-            {/* <div id="menu-button" style={{ display: 'block' }} bis_skin_checked="1">Menú</div> */}
             <ul className="open">
                 <li><Link href={`/${idioma}`}>{t("inicio")}</Link></li>
                 <li><a href="#">{t("vida_academica")}</a></li>

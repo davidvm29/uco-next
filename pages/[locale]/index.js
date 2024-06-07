@@ -14,7 +14,6 @@ import Link from 'next/link';
 const Homepage = ({ posts, images, ...i18nProps }) => {
   const { t } = useTranslation(['common'])
   const { i18n } = useTranslation();
-  console.log(i18n)
   const idioma = i18n.language;
 
   return (
@@ -32,31 +31,11 @@ const Homepage = ({ posts, images, ...i18nProps }) => {
       <Interes/>
       <Footer/>
 
-      {/* <main>
-        <Header heading={t('h1')} title={t('title')} />
-        <div>
-          <Link href='/second-page'>
-            <button
-              type='button'
-            >
-              {t('to-second-page')}
-            </button>
-          </Link>
-        </div>
-      </main>
-      <Footer /> */}
     </div>
   )
 }
 
 export default Homepage
 
-const getStaticProps = makeStaticProps(['common', 'footer'])
+const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
-
-// export async function getStaticProps1() {
-//   const posts = await getAllFilesMetadata();
-//   return {
-//     props: { posts, images }
-//   }
-// }

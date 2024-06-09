@@ -171,7 +171,7 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
 function makeStaticProps(ns = []) {
     return async function getStaticProps({ params }) {
         const { source, frontmatter } = await getFileBySlug(params.slug, params.locale, 'noticias');
-        const count = await incrementVisitCount(frontmatter.slug);
+        const count =  incrementVisitCount(frontmatter.slug);
         const relatedPosts = await getRelatedPosts(frontmatter.slug, params.locale);
         const relatedPostsCategories = await getRelatedPostsByLocation(frontmatter.slug, params.locale);
         const NoticiasFecha = await getNoticiasFecha(params.locale);

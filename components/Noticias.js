@@ -2,9 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 
 function Noticias({ posts, idioma }) {
+  // Ordenar los posts por fecha de forma descendente
+  const postsOrdenados = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Tomar solo los primeros 4 posts
+  const cuatroMasRecientes = postsOrdenados.slice(0, 4);
+
   return (
     <div className="row">
-      {posts.map(post => (
+      {cuatroMasRecientes.map(post => (
         <div key={post.slug} className="col-lg-3 col-md-3 col-sm-3 col-xs-6 custom-col">
           <figure>
           <Link href={`/${idioma}/${post.slug}`}>
@@ -25,10 +30,3 @@ function Noticias({ posts, idioma }) {
 }
 
 export default Noticias;
-
-
-
-
-
-
-

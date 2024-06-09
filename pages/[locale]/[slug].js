@@ -25,6 +25,7 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
         });
       };
       const router = useRouter();
+      console.log('router',router)
       const [date, setDate] = useState(new Date());
       const [isClient, setIsClient] = useState(false);
       const {t} = useTranslation(['common'])
@@ -99,7 +100,7 @@ export default function Post({ source, frontmatter, count, locale, relatedPosts,
 
                     <div style={{ marginTop: '40px' }}></div>
                     <div className="share-links">
-                        <ShareButtons/>
+                        <ShareButtons shareUrl={router.asPath}/>
                     </div>
                     <div style={{marginBottom: '20px'}} className="hastag">
                         <span>{t("publicado")} <a href="#">{frontmatter.Lugar_publicacion}</a></span>

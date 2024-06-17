@@ -2,7 +2,7 @@
     {"title": "Search", "url": "#"},
     {"title": "Menu", "url": "/en#menu-principal"},
     {"title": "Get to Know UCO", "url": "#"},
-    {"title": "History", "url": "/en/historia-en.html"},
+    {"title": "History", "url": "/Historia"},
     {"title": "Institutional Organization", "url": "#"},
     {"title": "Government Team", "url": "#"},
     {"title": "Governing Council", "url": "#"},
@@ -127,8 +127,8 @@
     {"title": "Electronic Invoice", "url": "#"},
     {"title": "Staff Portal", "url": "#"},
     {"title": "ceiA3", "url": "#"},
-    {"title": "Andalusian rectors address the new degree map and request equality regarding private universities", "url": "/en/noticia3"},
-    {"title": "The University of Córdoba, among the top 800 universities in the world according to the latest THE ranking", "url": "/en/noticia4"},
-    {"title": "#UCOenAbierto I Light of Mined Lives", "url": "/en/noticia5"},
-    {"title": "Sara Muñoz Porras, re-elected president of the University Students Council of UCO (CEUCO)", "url": "/en/noticia6"}
+    {"title": "Andalusian rectors address the new degree map and request equality regarding private universities", "url": "/noticia3"},
+    {"title": "The University of Córdoba, among the top 800 universities in the world according to the latest THE ranking", "url": "/noticia4"},
+    {"title": "#UCOenAbierto I Light of Mined Lives", "url": "/noticia5"},
+    {"title": "Sara Muñoz Porras, re-elected president of the University Students Council of UCO (CEUCO)", "url": "/noticia6"}
   ]

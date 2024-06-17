@@ -8,6 +8,7 @@ import Link from 'next/link';
 export const NavBar = ({ idioma }) => {
   const router = useRouter();
   const { locale } = router.query;
+  // const idioma1 = i18n.language;
   const [query, setQuery] = useState('');
   const MAX_QUERY_LENGTH = 50; // Establecer el máximo de caracteres permitidos en la búsqueda
   const {t} = useTranslation(['common'])
@@ -27,7 +28,7 @@ export const NavBar = ({ idioma }) => {
 
     // Redirigir a la página de resultados con la consulta de búsqueda
     router.push({
-      pathname: `/${locale}/Search`,
+      pathname: `/${idioma}/Search`,
       query: { q: query },
     });
   };

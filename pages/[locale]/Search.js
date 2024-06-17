@@ -23,7 +23,7 @@ const Search = () => {
         const fetchData = async () => {
             if (!query) return; // Evitar solicitudes vacías
 
-            const response = await fetch(`../json/busqueda/${locale}/data.json`);
+            const response = await fetch(`../json/busqueda/${idioma}/data.json`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -38,7 +38,7 @@ const Search = () => {
 
         // Llamar a la función para cargar los datos solo si hay una consulta válida
         fetchData();
-    }, [query, locale]);
+    }, [query, idioma]);
 
     return (
         <div>
@@ -58,7 +58,7 @@ const Search = () => {
                             <ul id='results-container'>
                                 {searchResults.map((result, index) => (
                                     <li id='search-li' key={index}>
-                                        <Link href={result.url || '#'}>{result.title}</Link>
+                                        <Link href={`/${idioma}${result.url || '#'}`}>{result.title}</Link>
                                     </li>
                                 ))}
                             </ul>

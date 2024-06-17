@@ -29,7 +29,7 @@ export default function Historia({ source, frontmatter }) {
   return (
     <>
       <Header />
-      <NavBarNoticias />
+      <NavBarNoticias idioma={idioma} />
       <NavHistoria/>
       <Breadcrumbs paths={paths}/>
       <section id="principal" className="row" >
